@@ -23,7 +23,7 @@
     "watch:sassprefixer": "onchange -d 100 sass/* -- npm-run-all sass -s autoprefixer",
 	"work": "npm-run-all project -p watch:*",
 	"project": "npm-run-all project:*",
-	"project:clean": "rimraf css/*.css",
+	"project:clean": "rimraf css/*.css npm-run-all -p rm -f .git/index.lock",
 	"project:sass": "node-sass --output-style expanded --source-map true -o css sass",
 	"project:autoprefixer": "autoprefixer-cli css/style.css"
 	

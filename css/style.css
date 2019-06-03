@@ -1,0 +1,21 @@
+/*section > .row {
+    margin: 40px 0;
+}*/
+.fixed-width {
+  width: 992px;
+  margin: 0 auto;
+}
+
+/***** Sections *****/
+.header {
+  background-image: url(/images/header_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 742px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
