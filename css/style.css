@@ -1,17 +1,7 @@
 /*Fonts */
-/*section > .row {
-    margin: 40px 0;
-}*/
 .fixed-width {
   width: 992px;
   margin: 0 auto;
-}
-
-.aboutus > .row-years {
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-direction: column;
-      flex-direction: column;
 }
 
 .move-up {
@@ -20,6 +10,11 @@
 
 .move-up:hover {
   transform: translateY(-5px);
+}
+
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .mb-7 {
@@ -32,6 +27,10 @@
 
 .m-left-50 {
   margin-left: 50px;
+}
+
+.only-on-mobile {
+  display: none;
 }
 
 /***** Sections *****/
@@ -356,13 +355,109 @@ i {
   padding: 0 3px;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
+@media (max-width: 575.98px) {
+  .py-6 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .navbar > .container-fluid {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .nav {
+    background: rgba(0, 0, 0, 0.8);
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .nav .nav-item {
+    padding: 10px;
+  }
+  .nav .nav-item a {
+    display: block;
+  }
+  .welcome {
+    margin-top: 5%;
+  }
+  .welcome h1 {
+    font-size: 50px;
+  }
+  .circle-field .circle {
+    width: 100%;
+    height: 100%;
+  }
+  .circle-field .circle::after {
+    content: "";
+    width: 0;
+    height: 0;
+  }
+  .circle-field .circle img {
+    width: 100%;
+    height: 100%;
+  }
+  .rounded {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .brand a {
+    padding: 15px;
+  }
+  .contactus input, .contactus textarea, .contactus textarea {
+    width: 100%;
+  }
+  footer .row div:first-child {
+    text-align: center;
+  }
 }
 
-.py-6 {
-  padding-top: 6rem !important;
-  padding-bottom: 6rem !important;
+@media (min-width: 576px) and (max-width: 991px) {
+  .py-6 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .nav .nav-item {
+    padding: 10px 5px;
+  }
+  .portfolio img {
+    padding-bottom: 30%;
+  }
+  .circle-field .circle::after {
+    content: "";
+    width: 0;
+    height: 0;
+  }
+  .employee, .layer-team {
+    width: 90%;
+    height: 200px;
+  }
+  .layer-team {
+    display: none;
+  }
+  .team-subtitle {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .only-on-mobile {
+    display: block;
+  }
+  footer p {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .mb-7 {
+    margin-bottom: 2rem;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 .white-bg {

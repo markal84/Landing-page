@@ -1,14 +1,7 @@
-/*section > .row {
-    margin: 40px 0;
-}*/
+
 .fixed-width {
     width: 992px;
     margin: 0 auto;
-}
-
-.aboutus > .row-years {
-    justify-content: center;
-    flex-direction: column;
 }
 
 .move-up { // move slightly up on hover
@@ -16,6 +9,10 @@
     &:hover {
         transform: translateY(-5px);
     }
+}
+.py-6 { // spacing between sections
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 .mb-7 {
     margin-bottom: 6rem;
@@ -25,4 +22,7 @@
 }
 .m-left-50 {
     margin-left: 50px;
+}
+.only-on-mobile {
+    display: none;
 }

@@ -1,0 +1,123 @@
+@media (max-width: 575.98px) {
+    .py-6 { //spacing between sections
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    //navbar
+    .navbar > .container-fluid {
+        justify-content: center;
+    }
+    .nav {
+        background: rgba(0, 0, 0, 0.8);
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        .nav-item {
+            padding: 10px;
+            a {
+                display: block;
+            }
+        }
+    }
+    //header welcome section 
+    .welcome {
+        margin-top: 5%;
+        h1 {
+            font-size: 50px;
+        }
+    }
+    //about us section
+    .circle-field {
+        .circle {
+            width: 100%;
+            height: 100%;
+            &::after {
+                content: "";
+                width: 0;
+                height: 0;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .rounded {
+        display: flex;
+        justify-content: center;
+    }
+    //brand
+    .brand {
+        a {
+            padding: 15px;
+        }
+    }
+    //contact us 
+    .contactus {
+        input, textarea {
+            width: 100%;
+        }
+    }
+    //footer 
+    footer {
+        .row {
+            div {
+                &:first-child {
+                    text-align: center;
+                }
+            }    
+        }
+    }
+}
+@media (min-width:576px) and (max-width:991px) {
+    .py-6 { //spacing between sections
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    //navigation
+    .nav { 
+        .nav-item {
+            padding: 10px 5px;
+        }
+    }
+    //portfolio
+    .portfolio {
+        img {
+            padding-bottom: 30%;
+        }
+    }
+    //about us
+    .circle-field {
+        .circle {
+            &::after {
+                content: "";
+                width: 0;
+                height: 0;
+            }
+        }
+    }
+    //team
+    .employee {
+        width:90%;
+        height: 200px;
+    }
+    .layer-team {
+        display: none;
+    }
+    .team-subtitle {
+        opacity: 1;
+    }
+}
+@media (max-width: 1024px) {
+    .only-on-mobile {
+        display: block;
+    }
+    footer p {
+        font-size: 11px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .mb-7 {
+        margin-bottom: 2rem;
+    }
+}

@@ -2,15 +2,12 @@
 @import "layout";
 @import "sections";
 @import "buttons";
+@import "mq";
 @import "mixins";
 
 
 body {
     font-family: $montserrat;
-}
-.py-6 { // spacing between sections
-    padding-top: 6rem !important;
-    padding-bottom: 6rem !important;
 }
 .white-bg { //white background for various elements
     background-color: #fff;
