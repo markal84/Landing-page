@@ -1,10 +1,249 @@
 /***** Sections *****/
 
+/* Header section */
 //header
 .header {
     background-image: url(/images/header_bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 742px;  
+    height: 742px;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);   //header background tint
 }
+//nav bar
+.nav-item {
+    padding: 0 10px;
+    &:last-child {
+        padding: 0 0 0 10px;
+    }
+    a {
+        text-transform: uppercase;
+        color: white;
+        font-weight: 400;
+        font-size: 14px;
+        transition: .5s;
+        &:hover {
+            color: #fed136;
+        }
+    }
+}
+//welcome headers 
+.welcome {
+    color: white;
+    margin-top: 15%;
+    h1 {
+        text-transform: uppercase;
+        font-size: 70px;
+        font-weight: 700;
+        letter-spacing: -1.8px;
+    } 
+    h2 {
+        font-style: italic;
+        text-transform: capitalize;
+        margin-bottom: 40px;
+        letter-spacing: -1px;
+    }
+}
+
+/* Services section */
+.service-title {
+    color: $primary;
+    font-weight: 700;
+    letter-spacing: -0.45px;
+    font-size: 18px;
+}
+.service-subtitle {
+    color: $secondary;
+    font-family: $roboto;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* Portfolio section */
+.portfolio {
+    background-color: #f7f7f7;
+    img {
+        max-width: 100%;
+        padding-bottom: 25%;
+        background-color: #fff;
+        transition: .5s;
+        &:hover {
+            background-color: $orange;
+        }
+    }
+}
+.portfolio-box { // contain title and subtitle
+    position: relative;
+}
+.portfolio-box-title {
+    position: absolute;
+    top: 82%;
+    width: 100%;
+}
+.portfolio-title {
+    @extend .service-title;
+    margin-bottom: 0;
+}
+.portfolio-subtitle {
+    @extend .service-subtitle;
+    text-align: center;
+}
+
+/* About us section */
+.circle-field {
+    display: flex;
+    .circle {
+        width: 180px;
+        height: 181px;
+        border-radius: 50%;
+        border: 6px solid $aboutus;
+        position: relative;
+        &::after {
+          content: "";
+          display: block;
+          width: 3px;
+          height: 120px;
+          background: $aboutus;
+          
+          position: absolute;
+          bottom: -120px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        img {
+          width: 169px;
+          height: 169px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+    .circle-text {
+        overflow-y: auto;
+        max-height: 300px;
+    }
+}
+.aboutus-title {
+    @extend .portfolio-title;
+    text-transform: uppercase;
+}
+.aboutus-subtitle {
+    @extend .service-title;
+    text-transform: capitalize;
+}
+.aboutus-text {
+    @extend .service-subtitle;
+}
+
+/* Team section */
+.team {
+    background-color: #f9f9f9;
+    .btn-dark {
+        color: $primary;
+        background-color: inherit;
+        border: 3px solid $primary;
+        &:hover {
+            color: #f9f9f9;
+            background-color: $primary;
+        }
+    }
+}
+.employee {
+    width: 100%;
+    height: 330px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid $aboutus;
+    cursor: pointer;
+}
+.layer-team {
+    @extend .employee;
+    opacity: 0;
+    border: none;
+    position: relative;
+    background-color: #000;
+    transition: .7s ease-in-out;
+    &:hover {
+        background-color: rgba(0,0,0,.5);
+        opacity: 1;
+    }
+    .team-subtitle {
+        @extend .portfolio-subtitle;
+        opacity: 0;
+        font-size: 28px;
+        color: #fff;
+        line-height: 313px;
+        transition: .7s ease-in-out;
+        &:hover {
+            opacity: 1;
+        }
+    } 
+}
+.marketer {
+    background-image: url(/images/team/marketer.jpg);
+}
+.coder {
+    background-image: url(/images/team/coder.jpg);
+}
+.graphic {
+    background-image: url(/images/team/graphic.jpg);
+}
+.team-title {
+    @extend .portfolio-title;
+    text-align: center;
+}
+.team-summary {
+    @extend .portfolio-subtitle;
+    font-size: 16px;
+    letter-spacing: -0.4px;
+}
+
+/* Contact us section */
+.contactus {
+    background-color: $primary;
+    background-image: url(/images/contactus_bg.png);
+    background-repeat: no-repeat;
+    background-position: 430% -550%;
+    width: 100%;
+    .title {
+        h2 {
+            color: #fff;
+        }
+    }
+    input {
+        width: 90%;
+        &::placeholder {
+            font-family: $montserrat;
+            font-size: 14px;
+            color: #bbb;
+            font-weight: 700;
+            letter-spacing: -0.35px;
+            text-transform: uppercase;
+        }
+    }
+    textarea {
+        @extend input;
+        height: 90%;
+    }
+    .btn-page {
+        margin-top: 0;
+    }    
+}
+
+/* footer */
+footer {
+    p {
+        line-height: 50px;
+        font-size: 12px;
+        font-weight: 500;
+        a {
+            color: $primary;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+

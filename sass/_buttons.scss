@@ -1,0 +1,36 @@
+.btn-page { 
+    background-color: $orange;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 5%;
+    padding: 20px 40px;
+    &:hover {
+        color: $primary;
+        background-color: #f7d05c;
+    }
+}
+.btn-rounded {
+    background-color: none;
+    border: 3px solid $orange;
+    border-radius: 100%;
+    i {
+        padding: 10px 5px;
+        font-size: 35px;
+        color: $orange;
+        font-weight: 500;
+    }
+}
+i { // social buttons
+    font-size: 26px;
+}
+.tweet {
+    padding: 6px 9px;
+}
+.google {
+    padding: 6px 5px;
+}
+.fa-facebook-f {
+    padding: 0 3px;
+}

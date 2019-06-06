@@ -1,9 +1,31 @@
 @import "variables";
 @import "layout";
 @import "sections";
+@import "buttons";
 @import "mixins";
+
 
 body {
     font-family: $montserrat;
 }
-
+.py-6 { // spacing between sections
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+}
+.white-bg { //white background for various elements
+    background-color: #fff;
+}
+.title { //titles for sections
+    h2 {
+        color: $primary;
+        letter-spacing: -1px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 40px;
+    }
+    p {
+        color: $secondary;
+        font-family: $roboto;
+        font-style: italic;
+    }
+}

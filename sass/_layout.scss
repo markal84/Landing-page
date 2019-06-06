@@ -5,3 +5,24 @@
     width: 992px;
     margin: 0 auto;
 }
+
+.aboutus > .row-years {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.move-up { // move slightly up on hover
+    transition: .5s;
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+.mb-7 {
+    margin-bottom: 6rem;
+}
+.mr-6 {
+    margin-right: 5rem !important;
+}
+.m-left-50 {
+    margin-left: 50px;
+}

@@ -4,59 +4,385 @@
     	<meta charset="UTF-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Landing Page</title>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800|Roboto:400,500,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700,800|Roboto+Slab:400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     	<link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <section class=" container-fluid header">
+        <!--Header-->
+        <section class="container-fluid header" id="home">
             <div class="row">
-                <div class="offset-md-2"></div>
-                <div class="col-md-8 col-sm-12">
-                    <nav class="navbar navbar-default">
+                <div class="offset-md-1"></div>
+                <div class="col-md-10 col-sm-12">
+                    <nav class="navbar navbar-default mt-4">
                             <div class="container-fluid">
                             <div class="navbar-header">
-                                <a class="navbar-brand" href="#">WebSiteName</a>
+                                <a class="navbar-brand" href="#"><img src="/images/Logo.png"></a>
                             </div>
                             <ul class="nav">
                                     <li class="nav-item">
-                                    <a class="nav-link active" href="#">Active</a>
+                                        <a class="nav-link active" href="#">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
+                                        <a class="nav-link" href="#">Services</a>
                                     </li>
                                     <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
+                                        <a class="nav-link" href="#">Portfolio</a>
                                     </li>
                                     <li class="nav-item">
-                                    <a class="nav-link" href="#">Disabled</a>
+                                        <a class="nav-link" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
                                     </li>
                                 </ul>
                             </div>
                     </nav>
                 </div>
+                <div class="offset-md-1"></div>
+            </div>
+            <div class="row">
                 <div class="offset-md-2"></div>
+                <div class="col-md-8 col-sm-12 welcome text-center">
+                    <h2>Welcome to our studio!</h2>
+                    <h1>It's nice to meet you</h1>
+                    <button type="button" class="btn btn-page">Tell me more</button>
+                </div>
+                <div class="offset-md-2"></div>
+                </div>
+
             </div>
         </section>
-        <section class="container services">
-                <div class="row">
+        <!--Services-->
+        <section class="container services py-6" id="services">
+            <div class="row">
                     <div class="offset-md-2"></div>
-                    <div class="col-md-8 col-sm-12">
-
+                    <div class="col-md-8 col-sm-12 text-center title">
+                        <h2>services</h2>
+                        <p>Proin iaculis purus consequat sem cure.</p>
+                    </div>
+                    <div class="offset-md-2"></div>
+            </div>
+            <div class="row">
+                    <div class="col-md-4 col-sm-12 text-center move-up">
+                        <button type="button" class="btn btn-rounded mt-5 mb-4"><i class="far fa-envelope-open"></i></button>
+                        <p class="service-title">E-commerce</p>
+                        <p class="service-subtitle">Proin iaculis purus consequat sem cure 
+                                digni ssim. Donec porttitora entum suscipit 
+                                aenean rhoncus posuere odio in tincidunt.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12 text-center move-up">
+                        <button type="button" class="btn btn-rounded mt-5 mb-4"><i class="far fa-window-maximize"></i></button>
+                        <p class="service-title">Responsive Web</p>
+                        <p class="service-subtitle">Proin iaculis purus consequat sem cure 
+                                    digni ssim. Donec porttitora entum suscipit 
+                                    aenean rhoncus posuere odio in tincidunt.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12 text-center move-up">
+                        <button type="button" class="btn btn-rounded mt-5 mb-4"><i class="far fa-hdd"></i></button>
+                        <p class="service-title">Web security</p>
+                        <p class="service-subtitle">Proin iaculis purus consequat sem cure 
+                                    digni ssim. Donec porttitora entum suscipit 
+                                    aenean rhoncus posuere odio in tincidunt.</p>
+                    </div>    
+            </div>
+        </section>
+        <!--Portfolio-->
+        <section class="container-fluid portfolio py-6" id="portfolio">
+            <div class="container">
+                <div class="row pb-5">
+                    <div class="offset-md-2"></div>
+                    <div class="col-md-8 col-sm-12 text-center title">
+                        <h2>Our Portfolio</h2>
+                        <p>Proin iaculis purus consequat sem cure.</p>
                     </div>
                     <div class="offset-md-2"></div>
                 </div>
-        </section>
-        <section class="container portfolio">
+                <div class="row pb-5">
+                    <div class="col-md-4 col-sm-12 text-center mb-4">
+                    <a href="#">
+                        <div class="portfolio-box">
+                            <img src="images/portfolio/ebony_ivory.png">
+                            <div class="portfolio-box-title">
+                                <p class="portfolio-title">Ebony & Ivory</p>
+                                <p class="portfolio-subtitle">Branding</p>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="col-md-4 col-sm-12 text-center mb-4">
+                        <a href="#"> 
+                            <div class="portfolio-box">
+                                <img src="images/portfolio/smart_stationary.png">
+                                <div class="portfolio-box-title">
+                                    <p class="portfolio-title">Smart Stationary</p>
+                                    <p class="portfolio-subtitle">Print design</p>
+                                </div>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="col-md-4 col-sm-12 text-center mb-4">
+                        <a href="#">
+                            <div class="portfolio-box">
+                                <img src="images/portfolio/clever_poster.png">
+                                <div class="portfolio-box-title">
+                                    <p class="portfolio-title">Clever Poster</p>
+                                    <p class="portfolio-subtitle">Print Design</p>
+                                </div>
+                            </div>
+                        </a>    
+                    </div>      
+                </div>
                 <div class="row">
+                        <div class="col-md-4 col-sm-12 text-center mb-4">
+                            <a href="#">
+                                <div class="portfolio-box">
+                                    <img src="images/portfolio/vinyl_record.png">
+                                    <div class="portfolio-box-title">
+                                        <p class="portfolio-title">Vinyl Record</p>
+                                        <p class="portfolio-subtitle">Product Mock-Up</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-12 text-center mb-4">
+                            <a href="#">
+                                <div class="portfolio-box">
+                                    <img src="images/portfolio/treehouse_template.png">
+                                    <div class="portfolio-box-title">
+                                        <p class="portfolio-title">Treehouse Template</p>
+                                        <p class="portfolio-subtitle">Web Design</p>
+                                    </div>    
+                                </div>
+                            </a>    
+                        </div>
+                        <div class="col-md-4 col-sm-12 text-center">
+                            <a href="#">
+                                <div class="portfolio-box">
+                                    <img src="images/portfolio/burned_logo.png">
+                                    <div class="portfolio-box-title">
+                                        <p class="portfolio-title">Burned Logo</p>
+                                        <p class="portfolio-subtitle">Branding</p>
+                                    </div>    
+                                </div>
+                            </a>    
+                        </div>      
+                </div>       
+            </div>    
+        </section>
+        <!--About Us-->
+        <section class="container aboutus py-6" id="aboutus">
+            <div class="row pb-5">
+                <div class="offset-md-2"></div>
+                <div class="col-md-8 col-sm-12 text-center title">
+                    <h2>about us</h2>
+                    <p>Proin iaculis purus consequat sem cure.</p>
+                </div>
+                <div class="offset-md-2"></div>
+            </div>
+            <!--2010-->
+            <div class="row">
+                
+                <div class="offset-md-1"></div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-7">
+                        <div class="circle-field">
+                            <div class="text-right circle-text">
+                                        <p class="aboutus-title">july 2010</p>
+                                        <p class="aboutus-subtitle">our humble beginnings</p>
+                                        <p class="aboutus-text text-right">Proin iaculis purus consequat sem cure 
+                                                digni ssim. Donec porttitora entum suscipit 
+                                                aenean rhoncus posuere odio in tincidunt. Proin 
+                                                iaculis purus consequat sem cure digni 
+                                                ssim. Donec porttitora entum suscipit.</p>
+                            </div>  
+                            <div class="circle ml-5">
+                            <img src="images/about/2010.png" alt="">
+                            </div>      
+                        </div>
+                </div>
+            </div>
+            <!--2011-->
+            <div class="row">       
+                
+                <div class="offset-md-4 mr-5"></div>
+                <div class="col-lo-6 col-md-6 col-sm-12 mb-7 ml-3">
+                        <div class="circle-field">
+                            <div class="circle float-right mr-5">
+                                <img src="images/about/2011.png" class="float-right" alt="">
+                            </div>
+                            <div class="text-left circle-text">
+                                <p class="aboutus-title">january 2011</p>
+                                <p class="aboutus-subtitle">facing startup battles</p>
+                                <p class="aboutus-text text-left">Proin iaculis purus consequat sem cure 
+                                            digni ssim. Donec porttitora entum suscipit 
+                                            aenean rhoncus posuere odio in tincidunt. Proin 
+                                            iaculis purus consequat sem cure digni 
+                                            ssim. Donec porttitora entum suscipit.</p>
+                            </div>        
+                        </div>
+                </div>
+            </div>
+            <!--2012-->          
+            <div class="row">
+                
+                <div class="offset-md-1"></div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-7">
+                        <div class="circle-field">
+                            <div class="text-right circle-text">
+                                        <p class="aboutus-title">december 2012</p>
+                                        <p class="aboutus-subtitle">enter the dark days</p>
+                                        <p class="aboutus-text text-right">Proin iaculis purus consequat sem cure 
+                                                digni ssim. Donec porttitora entum suscipit 
+                                                aenean rhoncus posuere odio in tincidunt. Proin 
+                                                iaculis purus consequat sem cure digni 
+                                                ssim. Donec porttitora entum suscipit.</p>
+                            </div>  
+                            <div class="circle ml-5">
+                            <img src="images/about/2012.png" alt="">
+                            </div>      
+                        </div>
+                </div>
+            </div>
+            <!--2014--> 
+            <div class="row">       
+                
+                <div class="offset-md-4 mr-5"></div>
+                <div class="col-lo-6 col-md-6 col-sm-12 mb-7 ml-3">
+                        <div class="circle-field">
+                            <div class="circle float-right mr-5">
+                                <img src="images/about/2014.png" class="float-right" alt="">
+                            </div>
+                            <div class="text-left circle-text">
+                                <p class="aboutus-title">february 2014</p>
+                                <p class="aboutus-subtitle">our triumph</p>
+                                <p class="aboutus-text text-left">Proin iaculis purus consequat sem cure 
+                                            digni ssim. Donec porttitora entum suscipit 
+                                            aenean rhoncus posuere odio in tincidunt. Proin 
+                                            iaculis purus consequat sem cure digni 
+                                            ssim. Donec porttitora entum suscipit.</p>
+                            </div>        
+                        </div>
+                </div>
+            </div>
+            <!--present-->
+            <div class="row">       
+                <div class="offset-md-4 mr-5"></div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="rounded">
+                            <img src="images/about/story.png" alt="">
+                        </div>        
+                </div> 
+            </div>        
+        </section>
+        <!--Team-->
+        <section class="container-fluid team py-6" id="team">
+            <div class="container">    
+                <div class="row pb-5">
                     <div class="offset-md-2"></div>
-                    <div class="col-md-8 col-sm-12">
-
+                    <div class="col-md-8 col-sm-12 text-center title">
+                        <h2>our amazing team</h2>
+                        <p>Proin iaculis purus consequat sem cure.</p>
                     </div>
                     <div class="offset-md-2"></div>
                 </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-8 mb-4 text-center">
+                        <div class="employee marketer mb-4">
+                            <div class="layer-team">
+                                <p class="team-subtitle">Marketer</p>
+                            </div>
+                        </div>
+                        <p class="team-title mb-3">Rico Massimo</p>
+                        <button class="btn btn-dark rounded-circle mr-3 tweet"><i class="fab fa-twitter"></i></button>
+                        <button class="btn btn-dark rounded-circle mr-3"><i class="fab fa-facebook-f"></i></button>
+                        <button class="btn btn-dark rounded-circle mr-3"><i class="fab fa-pinterest-p"></i></button>
+                    </div>
+                    <div class="col-md-4 col-sm-8 mb-4 text-center">
+                        <div class="employee coder mb-4">
+                            <div class="layer-team">
+                                <p class="team-subtitle">Coder</p>
+                            </div>
+                        </div>
+                        <p class="team-title mb-3">Kimberly Thompson</p>
+                        <button class="btn btn-dark rounded-circle mr-3 tweet"><i class="fab fa-twitter"></i></button>
+                        <button class="btn btn-dark rounded-circle mr-3"><i class="fab fa-facebook-f"></i></button>
+                        <button class="btn btn-dark rounded-circle mr-3 google"><i class="fab fa-google-plus-g"></i></button>
+                    </div>
+                    <div class="col-md-4 col-sm-8 mb-4 text-center">
+                        <div class="employee graphic mb-4">
+                            <div class="layer-team">
+                                <p class="team-subtitle">Designer</p>
+                            </div>
+                        </div>
+                        <p class="team-title mb-3">Ulla Mason</p>
+                        <button class="btn btn-dark rounded-circle mr-3"><i class="fab fa-facebook-f"></i></button>
+                        <button class="btn btn-dark rounded-circle mr-3"><i class="fab fa-pinterest-p"></i></button>
+                    </div>
+                </div>
+                <div class="row py-4 justify-content-center">
+                    <div class="col-md-6 col-sm-12">
+                        <p class="team-summary">Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit  
+                            aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <script src="https://use.fontawesome.com/7162cb0cba.js"></script>    
+        <!--Brands-->
+        <section class="container brand py-6">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 d-inline-flex justify-content-around flex-wrap">
+                    <a href="#"><img src="/images/about/Envato.png" alt=""></a>
+                    <a href="#"><img src="/images/about/WordPress.png" alt=""></a>
+                    <a href="#"><img src="/images/about/Microlancer_copy.png"></a>
+                    <a href="#"><img src="/images/about/Tuts+.png"></a>
+                </div>
+            </div>
+        </section>
+        <!--Contact us-->
+        <section class="container-fluid fluid contactus py-6">
+            <div class="container">
+                <div class="row pb-5">
+                    <div class="offset-md-2"></div>
+                    <div class="col-md-8 col-sm-12 text-center title">
+                        <h2>Contact us</h2>
+                        <p>Proin iaculis purus consequat sem cure.</p>
+                    </div>
+                    <div class="offset-md-2"></div>
+                </div>
+                <form>
+                    <div class="form-row py-5">
+                        <div class="col-md-6 col-sm-12">
+                            <input type="text" class="form-control-lg mb-3" placeholder="your name*">
+                            <input type="email" class="form-control-lg mb-3" placeholder="your email*">
+                            <input type="text" class="form-control-lg mb-3" placeholder="subject">
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <textarea class="form-control-lg" placeholder="your message*" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center">
+                        <button type="submit" class="btn btn-page">Send message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!--Footer-->
+        <section class="container py-5">
+            <footer>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <p>© Copyright 2014 <a href="#">FreebiesXpress.com</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 ml-5">
+                        <button class="btn btn-dark rounded-circle mr-3 tweet"><i class="fab fa-twitter"></i></button>
+                        <button class="btn btn-dark rounded-circle mr-3"><i class="fab fa-pinterest-p"></i></button>
+                        <button class="btn btn-dark rounded-circle mr-3"><i class="fab fa-facebook-f"></i></button>
+                        <button class="btn btn-dark rounded-circle mr-3 google"><i class="fab fa-google-plus-g"></i></button>
+                    </div>
+                </div>
+            </footer>
+        </section>    
         <script src="js/script.js"></script>	
     </body>
     
