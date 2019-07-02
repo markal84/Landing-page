@@ -58,7 +58,6 @@
     font-weight: 400;
     letter-spacing: -0.35px;
     font-size: 14px;
-    text-align: justify;
 }
 
 /* Portfolio section */
@@ -92,6 +91,21 @@
 }
 
 /* About us section */
+#aboutus {
+    position: relative;
+    &::after {
+        content: "";
+        display: block;
+        width: 3px;
+        height: 1047px;
+        background: $aboutus;
+        
+        position: absolute;
+        bottom: 270px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
 .circle-field {
     display: flex;
     .circle {
@@ -100,18 +114,7 @@
         border-radius: 50%;
         border: 6px solid $aboutus;
         position: relative;
-        &::after {
-          content: "";
-          display: block;
-          width: 3px;
-          height: 120px;
-          background: $aboutus;
-          
-          position: absolute;
-          bottom: -120px;
-          left: 50%;
-          transform: translateX(-50%);
-        }
+        z-index: 1;
         img {
           width: 169px;
           height: 169px;
