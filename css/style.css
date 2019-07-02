@@ -419,6 +419,17 @@ i {
   }
 }
 
+@media (min-width: 576px) and (max-width: 652px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .col-sm-12 {
+    -ms-flex: 0 0 90%;
+        flex: 0 0 90%;
+  }
+}
+
 @media (min-width: 576px) and (max-width: 991px) {
   .py-6 {
     padding-top: 4rem;
